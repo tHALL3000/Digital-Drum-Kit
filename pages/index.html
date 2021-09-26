@@ -7,50 +7,69 @@
     <title>Beats and Drums</title>
     <link rel="stylesheet" type= "text/css"
     href="/styles/stylesheet.css">
+    <script src="main.js"></script>
+   
 </head>
 <body>
 <main class="keys">
-    <div class="key-button">
-        <kbd class="letter-name">LETTER</kbd>
-        <p class="sound-description">SOUND</p>
+    <div data-key="65" class="key-button">
+        <kbd class="letter-name">A</kbd>
+        <p class="sound-description">clap</p>
     </div>
-    <div class="key-button">
-        <kbd class="letter-name">LETTER</kbd>
-        <p class="sound-description">SOUND</p>
+    <div data-key="83" class="key-button">
+        <kbd class="letter-name">S</kbd>
+        <p class="sound-description">hi hat</p>
     </div>
-    <div class="key-button">
-        <kbd class="letter-name">LETTER</kbd>
-        <p   class="sound-description">SOUND</p>
+    <div data-key="68" class="key-button">
+        <kbd class="letter-name">D</kbd>
+        <p   class="sound-description">kick</p>
     </div>
-     <div class="key-button">
-        <kbd class="letter-name">LETTER</kbd>
-        <p class="sound-description">SOUND</p>
+     <div data-key="70" class="key-button">
+        <kbd class="letter-name">F</kbd>
+        <p class="sound-description">open hat</p>
     </div>
-    <div class="key-button">
-        <kbd class="letter-name">LETTER</kbd>
-        <p   class="sound-description">SOUND</p>
+    <div data-key="71" class="key-button">
+        <kbd class="letter-name">G</kbd>
+        <p   class="sound-description">boom</p>
     </div>
-     <div class="key-button">
-        <kbd class="letter-name">LETTER</kbd>
-        <p class="sound-description">SOUND</p>
+     <div data-key="72" class="key-button">
+        <kbd class="letter-name">H</kbd>
+        <p class="sound-description">ride</p>
     </div>
-    <div class="key-button">
-        <kbd class="letter-name">LETTER</kbd>
-        <p   class="sound-description">SOUND</p>
+    <div data-key="74" class="key-button">
+        <kbd class="letter-name">J</kbd>
+        <p   class="sound-description">snare</p>
     </div>
-     <div class="key-button">
-        <kbd class="letter-name">LETTER</kbd>
-        <p class="sound-description">SOUND</p>
+     <div data-key="75" class="key-button">
+        <kbd class="letter-name">K</kbd>
+        <p class="sound-description">tom</p>
     </div>
-    <div class="key-button">
-        <kbd class="letter-name">LETTER</kbd>
-        <p   class="sound-description">SOUND</p>
+    <div data-key="76" class="key-button">
+        <kbd class="letter-name">L</kbd>
+        <p   class="sound-description">tink</p>
     </div>
     
 </main>
    
+<audio data-key="65" src="/sounds/01 - JavaScript Drum Kit_sounds_clap.wav"></audio>
+<audio data-key="83" src="/sounds/01 - JavaScript Drum Kit_sounds_hihat.wav"></audio>
+<audio data-key="68" src="/sounds/01 - JavaScript Drum Kit_sounds_kick.wav"></audio>
+<audio data-key="70" src="/sounds/01 - JavaScript Drum Kit_sounds_openhat.wav"></audio>
+<audio data-key="71" src="/sounds/01 - JavaScript Drum Kit_sounds_boom.wav"></audio>
+<audio data-key="72" src="/sounds/01 - JavaScript Drum Kit_sounds_ride.wav"></audio>
+<audio data-key="74" src="/sounds/01 - JavaScript Drum Kit_sounds_snare.wav"></audio>
+<audio data-key="75" src="/sounds/01 - JavaScript Drum Kit_sounds_tom.wav"></audio>
+<audio data-key="76" src="/sounds/01 - JavaScript Drum Kit_sounds_tink.wav"></audio>
+
 </body>
 <footer class="footer">
     
+            <nav class="footer__links">
+                <a class="footer__link" href="#">Tiffany Codes Portfolio</a>
+                <a class="footer__link" href="#">GitHub Source Code</a>
+                <a class="footer__link" href="#">Contact Tiffany</a>
+            </nav>
+            <a class="footer__copyright" href="https://github.com/tHALL3000/web_project_3/tree/main"> &copy; 2021 tHALL3000</a>
+     
 </footer> 
 </html>

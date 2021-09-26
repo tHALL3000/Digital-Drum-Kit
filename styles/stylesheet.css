@@ -1,20 +1,21 @@
 body{
 background-image: url(/images/concert_stage.jpeg);
-width: 100vw;
+height: 1000px;
 background-color: #000;
 background-position: center;
 background-repeat: no-repeat;
-background-size: cover;
+background-size: contain;
+margin: 10px;
 
 }
 
 .keys{
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
-    padding-top: 150px;
+    padding-top: 33%;
     margin-left: 25px;
     margin-right: 25px;
+    flex-wrap: wrap;
 }
 
 .key-button{
@@ -25,10 +26,11 @@ background: rgba(0,0,0,.8);
 padding: 10px;
 margin: 0px;
 
+
 }
 
 .letter-name{
-font-size: 16px;
+font-size: 24px;
 color: #AAA;
 font-weight: bold;
     
@@ -36,13 +38,94 @@ font-weight: bold;
 }
 
 .sound-description{
-font-size: 12px;
+font-size: 17.5px;
 color: rgba(220, 235, 18, 0.671);
 font-weight: normal;
+margin: 0;
+padding: 0;
     
 }
 
 .footer{
-margin: 0;
-padding:0;
+	max-width: 92%;
+	margin: 92px 0 24px 0;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 5%;
+	padding-right: 5%;
 }
+@media only screen and (max-width: 1024px) {
+	.footer {
+		max-width: 90%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.footer {
+		max-width: 93%;
+	}
+}
+@media only screen and (max-width: 350px) {
+	.footer {
+		max-width: 51%;
+		margin-top: 64px;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+
+.footer__links {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+@media only screen and (max-width: 350px) {
+	.footer__links {
+		flex-direction: column;
+	}
+}
+
+.footer__link {
+	margin: 0;
+	margin-right: 18px;
+	font-size: 16px;
+	line-height: 18px;
+	color: #fff;
+	font-weight: 400;
+	text-decoration: none;
+}
+@media only screen and (max-width: 400px) {
+	.footer__link {
+		margin-bottom: 16px;
+		font-size: 24px;
+		line-height: 24px;
+	}
+}
+
+.footer__copyright {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 24px;
+	text-decoration: none;
+	font-family: "Inter", sans-serif;
+	color: #fff;
+}
+
+@media only screen and (max-width: 350px) {
+	.footer__copyright {
+		margin-top: 48px;
+		line-height: 14px;
+	}
+}
+
+.footer__copyright:hover {
+	opacity: 0.8;
+}
+

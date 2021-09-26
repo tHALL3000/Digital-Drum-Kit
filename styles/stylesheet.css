@@ -10,7 +10,7 @@ margin: 10px;
 }
 
 .keys{
-    display: flex;
+	display: flex;
     justify-content: space-between;
     padding-top: 33%;
     margin-left: 25px;
@@ -18,23 +18,20 @@ margin: 10px;
     flex-wrap: wrap;
 }
 
-.key-button{
-border: 5px #000 solid;
-width: 50px;
-height: 50px;
-background: rgba(0,0,0,.8);
-padding: 10px;
-margin: 0px;
-
-
+.keyButton{
+	border: 5px #000 solid;
+	width: 50px;
+	height: 50px;
+	background: rgba(0,0,0,.5);
+	padding: 10px;
+	margin: 0px;
+	transition: all .09s;
 }
 
 .letter-name{
 font-size: 24px;
 color: #AAA;
 font-weight: bold;
-    
-
 }
 
 .sound-description{
@@ -43,7 +40,12 @@ color: rgba(220, 235, 18, 0.671);
 font-weight: normal;
 margin: 0;
 padding: 0;
-    
+}
+
+.playing{
+	transform:scale(1.2);
+	border-color: rgb(252, 2, 231);
+	box-shadow: 0 0 10px rgb(252, 2, 231);
 }
 
 .footer{

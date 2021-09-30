@@ -13,19 +13,18 @@ window.addEventListener("keydown", function (e) {
 	sound.currentTime = 0;
 	sound.play();
 	key.classList.add("playing");
-	console.log(sound);
 });
 
 function removeTransition(e) {
 	if (e.propertyName !== "transform")
 		return;
 
-	key.classList.remove("playing");
+	this.classList.remove("playing");
 }
 
-const allKeys = document.querySelectorAll(".keyButton");
-allKeys.forEach((key) =>
-	key.addEventListener(
+const allKeys = Array.from(document.querySelectorAll(".keyButton"));
+allKeys.forEach((keyButton) =>
+	keyButton.addEventListener(
 		"transitionend",
 		removeTransition
 	)

@@ -6,6 +6,7 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 margin: 10px;
+position: relative;
 
 }
 
@@ -43,7 +44,7 @@ padding: 0;
 }
 
 .playing{
-	transform:scale(1.2);
+	transform:scale(2.2);
 	border-color: rgb(252, 2, 231);
 	box-shadow: 0 0 10px rgb(252, 2, 231);
 }
